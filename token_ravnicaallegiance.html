@@ -1,0 +1,88 @@
+<body>
+
+    <h1>Ravnica Allegiance </h1>
+
+    <p>
+        <select onchange="changer()" id="chose">
+        <option value="0">-----</option>
+        <option value="1">Human</option>
+        <option value="2">Illusion</option>
+        <option value="3">Zombie</option>
+        <option value="4">Goblin</option>
+        <option value="5">Centaur</option>
+        <option value="6">Frog Lizard</option>
+        <option value="7">Ooze</option>
+        <option value="8">Beast</option>
+        <option value="9">Sphinx</option>
+        <option value="10">Spirit</option>
+        <option value="11">Thopter</option>
+        <option value="12">Treasure</option>
+        <option value="13">Domri Emblem</option>
+        </select>
+        <div id="token"><img src="images/token/allegiance/logo.png" alt=""></div>
+        <br>
+    </p>
+
+
+
+    <p>
+        <a href="tokenstart.html">Zurück</a>
+        <a href="start.html">Start</a>
+    </p>
+
+
+    <script>
+        function changer() {
+            x = document.querySelector("#chose").value;
+            if (x == 0) {
+                document.getElementById("token").innerHTML = `<img src="images/token/allegiance/logo.png" alt="">`;
+            } else if (x == "1") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/human.PNG" alt="Human">`;
+            } else if (x == "2") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/illusion.PNG" alt="Illusion">`;
+            } else if (x == "3") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/zombie.PNG" alt="Zombie">`;
+            } else if (x == "4") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/goblin.PNG" alt="Goblin">`;
+            } else if (x == "5") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/centaur.PNG" alt="Centaur">`;
+            } else if (x == "6") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/frog.PNG" alt="Frog">`;
+            } else if (x == "7") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/ooze.PNG" alt="Ooze">`;
+            } else if (x == "8") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/beast.PNG" alt="Beast">`;
+            } else if (x == "9") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/sphinx.PNG" alt="Sphinx">`;
+            } else if (x == "10") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/spirit.PNG" alt="Spirit">`;
+            } else if (x == "11") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/thopter.PNG" alt="Thopter">`;
+            } else if (x == "12") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/treasure.PNg" alt="Treasure">`;
+            } else if (x == "13") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/allegiance/emblem.PNG" alt="Emblem">`;
+            }
+        }
+    </script>
+    <style>
+        .tokens {
+            transform: rotate(270deg);
+            width: 452.92px;
+            height: 626.99px;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        a {
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
+
+</body>

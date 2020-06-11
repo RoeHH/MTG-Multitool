@@ -1,0 +1,87 @@
+<body>
+
+    <h1>Ikoria Lair of Behemoths</h1>
+
+    <p>
+        <select onchange="changer()" id="chose">
+        <option value="0">-----</option>
+        <option value="1">Cat</option>
+        <option value="2">Cat Bird</option>
+        <option value="3">Human Soldier</option>
+        <option value="4">Kraken</option>
+        <option value="5">Shark</option>
+        <option value="6">Dinosaur</option>
+        <option value="7">Feather</option>
+        <option value="8">Beast</option>
+        <option value="9">Dinosaur Beast</option>
+        <option value="10">Narset Emblem</option>
+        </select>
+        <div id="token"><img src="images/token/ikoria/logo.png" alt=""></div>
+        <br>
+    </p>
+
+
+
+    <p>
+        <a href="tokenstart.html">Zurück</a>
+        <a href="start.html">Start</a>
+    </p>
+
+
+    <script>
+        function changer() {
+            x = document.querySelector("#chose").value;
+            if (x == 0) {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img src="images/token/ikoria/logo.png" alt="">`;
+            } else if (x == "1") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/cat.PNG" alt="Missing img">`;
+            } else if (x == "2") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/cat_bird.PNG" alt="Missing img">`;
+            } else if (x == "3") {
+                var army_random = Math.floor(Math.random() * 3) + 1;
+                if (army_random == 1) {
+                    document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/human_soldier_1.PNG" alt="Missing img">`;
+                } else if (army_random == 2) {
+                    document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/human_soldier_2.PNG" alt="Missing img">`;
+                } else if (army_random == 3) {
+                    document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/human_soldier_3.PNG" alt="Missing img">`;
+                }
+            } else if (x == "4") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/kraken.PNG" alt="Missing img">`;
+            } else if (x == "5") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/shark.PNG" alt="Missing img">`;
+            } else if (x == "6") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/dinosaur.PNG" alt="Missing img">`;
+            } else if (x == "7") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/feather.PNg" alt="Missing img">`;
+            } else if (x == "8") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/beast.PNG" alt="Missing img">`;
+            } else if (x == "9") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/dinosaur_beast.PNG" alt="Missing img">`;
+            } else if (x == "10") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/ikoria/emblem.PNG" alt="Missing img">`;
+            }
+        }
+    </script>
+    <style>
+        .tokens {
+            transform: rotate(270deg);
+            width: 452.92px;
+            height: 626.99px;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        a {
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
+
+
+</body>

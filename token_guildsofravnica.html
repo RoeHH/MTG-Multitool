@@ -1,0 +1,73 @@
+<body>
+
+    <h1>Guilds of Ravnica</h1>
+
+    <p>
+        <select onchange="changer()" id="chose">
+        <option value="0">-----</option>
+        <option value="1">Angle</option>
+        <option value="2">Soldier</option>
+        <option value="3">Bird Illusion</option>
+        <option value="4">Goblin</option>
+        <option value="5">Elf Knight</option>
+        <option value="6">Insect</option>
+        <option value="7">Ral Rmblem</option>
+        <option value="8">Vraska Emblem</option>
+        </select>
+        <div id="token"><img src="images/token/guilds/logo.png" alt=""></div>
+        <br>
+    </p>
+
+
+
+    <p>
+        <a href="tokenstart.html">Zurück</a>
+        <a href="start.html">Start</a>
+    </p>
+
+
+    <script>
+        function changer() {
+            x = document.querySelector("#chose").value;
+            if (x == 0) {
+                document.getElementById("token").innerHTML = `<img src="images/token/guilds/logo.png" alt="">`;
+            } else if (x == "1") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/guilds/angle.PNG" alt="Missing img">`;
+            } else if (x == "2") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/guilds/soldier.PNG" alt="Missing img">`;
+            } else if (x == "3") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/guilds/bird.PNG" alt="Missing img">`;
+            } else if (x == "4") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/guilds/goblin.PNG" alt="Missing img">`;
+            } else if (x == "5") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/guilds/elf.PNG" alt="Missing img">`;
+            } else if (x == "6") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/guilds/insect.PNg" alt="Missing img">`;
+            } else if (x == "7") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/guilds/ral_emblem.PNG" alt="Missing img">`;
+            } else if (x == "8") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/guilds/vraska_emblem.PNG" alt="Missing img">`;
+            }
+        }
+    </script>
+    <style>
+        .tokens {
+            transform: rotate(270deg);
+            width: 452.92px;
+            height: 626.99px;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        a {
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
+
+</body>

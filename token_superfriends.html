@@ -1,0 +1,82 @@
+<body>
+
+    <h1>Superfriends</h1>
+
+    <p>
+        <select onchange="changer()" id="chose">
+        <option value="0">-----</option>
+        <option value="1">Zombie Army</option>
+        <option value="2">Soldier</option>
+        <option value="3">Beast</option>
+        <option value="4">Garruk Emblem</option>
+        <option value="5">Construct</option>
+        <option value="6">Elemental Bird</option>
+        <option value="7">Elemental</option>
+        <option value="8">Nissa Emblem</option>
+        <option value="9">Servo</option>
+        <option value="10">Dragon</option>
+        <option value="11">Zombie</option>
+        </select>
+        <div id="token"><img src="images/token/superfriends/sys.PNG" alt=""></div>
+        <br>
+    </p>
+
+
+
+    <p>
+        <a href="tokenstart.html">Zurück</a>
+        <a href="start.html">Start</a>
+    </p>
+
+
+    <script>
+        function changer() {
+            x = document.querySelector("#chose").value;
+            if (x == 0) {
+                document.getElementById("token").innerHTML = `<img src="images/token/superfriends/sys.PNG" alt="">`;
+            } else if (x == "1") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/superfriends/zombie_army.PNG" alt="Missing img">`;
+            } else if (x == "2") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/superfriends/soldier.PNG" alt="Missing img">`;
+            } else if (x == "3") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/superfriends/beast.PNG" alt="Missing img">`;
+            } else if (x == "4") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/superfriends/garuk_emblem.PNG" alt="Missing img">`;
+            } else if (x == "5") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/superfriends/construct.PNG" alt="Missing img">`;
+            } else if (x == "6") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/superfriends/bird.PNG" alt="Missing img">`;
+            } else if (x == "7") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/superfriends/elemental.PNG" alt="Missing img">`;
+            } else if (x == "8") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/superfriends/emblem_nissa.PNG" alt="Missing img">`;
+            } else if (x == "9") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/superfriends/servo.PNG" alt="Missing img">`;
+            } else if (x == "10") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/superfriends/dragon.PNG" alt="Missing img">`;
+            } else if (x == "11") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/superfriends/zombie.PNG" alt="Missing img">`;
+            }
+        }
+    </script>
+    <style>
+        .tokens {
+            transform: rotate(270deg);
+            width: 452.92px;
+            height: 626.99px;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        a {
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
+
+</body>

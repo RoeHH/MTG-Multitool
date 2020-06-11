@@ -1,0 +1,90 @@
+<body>
+
+    <h1>Theros beyond Death</h1>
+
+    <p>
+        <select onchange="changer()" id="chose">
+        <option value="0">-----</option>
+        <option value="1">Goat</option>
+        <option value="2">Human Soldier</option>
+        <option value="3">Pegasus</option>
+        <option value="4">Kraken</option>
+        <option value="5">Tentacle</option>
+        <option value="6">Reflection</option>
+        <option value="7">Zombie</option>
+        <option value="8">Elemental</option>
+        <option value="9">Satyr</option>
+        <option value="10">Spider</option>
+        <option value="11">Wolf</option>
+        <option value="12">Nightmare </option>
+        <option value="13">Gold</option>
+        <option value="14">Wall</option>
+        </select>
+        <div id="token"><img src="images/token/theros/logo.png" alt=""></div>
+        <br>
+    </p>
+
+
+    <p>
+        <a href="tokenstart.html">Zurück</a>
+        <a href="start.html">Start</a>
+    </p>
+
+
+    <script>
+        function changer() {
+            x = document.querySelector("#chose").value;
+            if (x == 0) {
+                document.getElementById("token").innerHTML = `<img src="images/token/theros/logo.png" alt="">`;
+            } else if (x == "1") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/goat.PNG" alt="Goat">`;
+            } else if (x == "2") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/human_soldier.PNG" alt="Human Soldier">`;
+            } else if (x == "3") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/pegasus.PNG" alt="Pegasus">`;
+            } else if (x == "4") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/kraken.PNG" alt="Kraken">`;
+            } else if (x == "5") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/tentacle.PNG" alt="Tentacle">`;
+            } else if (x == "6") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/reflection.PNG" alt="Reflection">`;
+            } else if (x == "7") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/zombie.PNG" alt="Zombie">`;
+            } else if (x == "8") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/elemental.PNG" alt="Elemental">`;
+            } else if (x == "9") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/satyr.PNG" alt="Satyr">`;
+            } else if (x == "10") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/spider.PNG" alt="Spider">`;
+            } else if (x == "11") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/wolf.PNG" alt="Wolf">`;
+            } else if (x == "12") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/nightmare.PNG" alt="Nightmare">`;
+            } else if (x == "13") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/gold.PNG" alt="Gold">`;
+            } else if (x == "14") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/theros/wall.PNG" alt="Wall">`;
+            }
+        }
+    </script>
+    <style>
+        .tokens {
+            transform: rotate(270deg);
+            width: 452.92px;
+            height: 626.99px;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        a {
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
+
+</body>

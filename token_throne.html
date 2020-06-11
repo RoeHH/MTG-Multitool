@@ -1,0 +1,107 @@
+<body>
+
+    <h1>Throne of Eldrain</h1>
+
+    <p>
+        <select onchange="changer()" id="chose">
+        <option value="0">-----</option>
+        <option value="1">Goat</option>
+        <option value="2">Human</option>
+        <option value="3">Knight</option>
+        <option value="4">Mouse</option>
+        <option value="5">Fearie</option>
+        <option value="6">rat</option>
+        <option value="7">Dwarf</option>
+        <option value="8">Bear</option>
+        <option value="9">Boar</option>
+        <option value="10">Giant</option>
+        <option value="11">Human Cleric</option>
+        <option value="12">Human Rouge</option>
+        <option value="13">Human Warrior</option>
+        <option value="14">Wolf</option>
+        <option value="15">Food</option>
+        <option value="16">Garruk Emblem</option>
+        </select>
+        <div id="token"><img src="images/token/throne/logo.png" alt=""></div>
+        <br>
+    </p>
+
+
+
+    <p>
+        <a href="tokenstart.html">Zurück</a>
+        <a href="start.html">Start</a>
+    </p>
+
+
+    <script>
+        function changer() {
+            x = document.querySelector("#chose").value;
+            if (x == 0) {
+                document.getElementById("token").innerHTML = `<img src="images/token/throne/logo.png" alt="">`;
+            } else if (x == "1") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/goat.PNG" alt="Missing img">`;
+            } else if (x == "2") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/human.png" alt="Missing img">`;
+            } else if (x == "3") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/knight.PNG" alt="Missing img">`;
+            } else if (x == "4") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/throne/mouse.PNG" alt="Missing img">`;
+            } else if (x == "5") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/fearie.PNG" alt="Missing img">`;
+            } else if (x == "6") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/rat.PNG" alt="Missing img">`;
+            } else if (x == "7") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/dwarf.PNG" alt="Missing img">`;
+            } else if (x == "8") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/bear.PNG" alt="Missing img">`;
+            } else if (x == "9") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/boar.PNG" alt="Missing img">`;
+            } else if (x == "10") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/giant.PNG" alt="Missing img">`;
+            } else if (x == "11") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/human_cleric.PNG" alt="Missing img">`;
+            } else if (x == "12") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/human_rouge" alt="Missing img">`;
+            } else if (x == "13") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/human_warrior" alt="Missing img">`;
+            } else if (x == "14") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/wolf.PNG" alt="Missing img">`;
+            } else if (x == "15") {
+                var army_random = Math.floor(Math.random() * 4) + 1;
+                if (army_random == 1) {
+                    document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/food_1" alt="Missing img">`;
+                } else if (army_random == 2) {
+                    document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/food_2" alt="Missing img">`;
+                } else if (army_random == 3) {
+                    document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/food_3" alt="Missing img">`;
+                } else if (army_random == 4) {
+                    document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/food_4.PNG" alt="Missing img">`;
+                }
+            } else if (x == "16") {
+                document.getElementById("token").innerHTML = `<img src="images/token/abstand.PNG" alt=""><img class="tokens" src="images/token/throne/emblem.PNG" alt="Missing img">`;
+            }
+        }
+    </script>
+    <style>
+        .tokens {
+            transform: rotate(270deg);
+            width: 452.92px;
+            height: 626.99px;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        a {
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
+
+
+</body>
