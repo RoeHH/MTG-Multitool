@@ -1,5 +1,5 @@
 # MTG Multitool
-## What is the MTG Multittol
+## What is the MTG Multitool
 I developed the "MTG Multitool" as a result of a school project. For the Raspbery Pi with a 480x320px toutch display.
 It includes a function that displays tokens as images, a life counter for the lives of both players and a coin toss. 
 It is my first project I developed with HTML,CSS and JavaScrip. Therefore I ask for feedback and suggestions for improvements of my coding style.
