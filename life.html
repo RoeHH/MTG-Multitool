@@ -1,3 +1,10 @@
+<html>
+<title>Life</title>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
 <body>
 
 
@@ -7,39 +14,41 @@
     <p onload="load()">
         <table>
             <tr>
-                <th class="buttonbar"><button style="float: left;" class="button_life" onclick="plus1_1()">+1</button></th>
-                <th class="buttonbar"><button style="float: left;" class="button_life" onclick="plus5_1()">+5</button></th>
-                <th class="buttonbar"><button class="button_life" onclick="plus10_1()">+10</button></th>
+                <th class="buttonbar"><button class="button_life " onclick="plus1_1() ">+1</button></th>
+                <th class="buttonbar "><button class="button_life " onclick="plus5_1() ">+5</button></th>
+                <th class="buttonbar "><button class="button_life " onclick="plus10_1() ">+10</button></th>
             </tr>
             <tr>
-                <td id="id1" class="lifebar"><button style="float: left;" id="11" class="button_res" onclick="res20_1()"> 20</button></td>
-                <td id="id2" class="lifebar"><button id="21" style="float: left;" class="lifedisplay" onclick="display_2()"><span id="life1"></span></button></td>
-                <td id="id3" class="lifebar"><button id="31" class="button_res" onclick="res40_1()"><span id="res40inf_1">40</button></td>
+                <td id="id1 " class="lifebar "><button id="11 " class="button_res " onclick="res20_1() "> 20</button></td>
+                <td id="id2 " class="lifebar "><button id="21 " class="lifedisplay " onclick="display_2() "><span id="life1 "></span></button></td>
+                <td id="id3 " class="lifebar "><button id="31 " class="button_res " onclick="res40_1() "><span id="res40inf_1 ">40</button></td>
             </tr>
             <tr>
-                <td class="buttonbar"><button style="float: left;" class="button_life" onclick="minus1_1()">- 1</button></td>
-                <td class="buttonbar"><button style="float: left;" class="button_life" onclick="minus5_1()"> - 5</button></td>
-                <td class="buttonbar"><button class="button_life" onclick="minus10_1()"> - 10</button></td>
+                <td class="buttonbar "><button class="button_life " onclick="minus1_1() ">- 1</button></td>
+                <td class="buttonbar "><button class="button_life " onclick="minus5_1() "> - 5</button></td>
+                <td class="buttonbar "><button class="button_life " onclick="minus10_1() "> - 10</button></td>
             </tr>
             <tr>
-                <td class="buttonbar"><button style="float: left;" class="button_life" onclick="plus1_2()">+1</button></td>
-                <td class="buttonbar"><button style="float: left;" class="button_life" onclick="plus5_2()">+5</button></td>
-                <td class="buttonbar"><button class="button_life" onclick="plus10_2()">+10</button></td>
+                <td class="buttonbar "><button class="button_life " onclick="plus1_2() ">+1</button></td>
+                <td class="buttonbar "><button class="button_life " onclick="plus5_2() ">+5</button></td>
+                <td class="buttonbar "><button class="button_life " onclick="plus10_2() ">+10</button></td>
             </tr>
             <tr>
-                <td id="id4" class="lifebar"><button id="12" style="float: left;" class="button_res" onclick="res20_2()">20</span></button></td>
-                <td id="id5" class="lifebar"><button id="22" style="float: left;" class="lifedisplay" onclick="display_2()"><span id="life2"></span></button></td>
-                <td id="id6" class="lifebar"><button id="32" class="button_res" onclick="res40_2()">40</button></td>
+                <td id="id4 " class="lifebar "><button id="12 " class="button_res " onclick="res20_2() ">20</span></button></td>
+                <td id="id5 " class="lifebar "><button id="22 " class="lifedisplay " onclick="display_2() "><span id="life2 "></span></button></td>
+                <td id="id6 " class="lifebar "><button id="32 " class="button_res " onclick="res40_2() ">40</button></td>
             </tr>
             <tr>
-                <td class="buttonbar"><button style="float: left;" class="button_life" onclick="minus1_2()">- 1</button></td>
-                <td class="buttonbar"><button style="float: left;" class="button_life" onclick="minus5_2()">- 5</button></td>
-                <td class="buttonbar"><button class="button_life" onclick="minus10_2()">- 10</button></td>
+                <td class="buttonbar "><button class="button_life " onclick="minus1_2() ">- 1</button></td>
+                <td class="buttonbar "><button class="button_life " onclick="minus5_2() ">- 5</button></td>
+                <td class="buttonbar "><button class="button_life " onclick="minus10_2() ">- 10</button></td>
             </tr>
 
         </table>
 
-        <a href="start.html">Start</a>
+        <button onclick="window.location.href='start.html' ; " class="back ">Zurück</button>
+
+
     </p>
     <script>
         var temp = 0;
@@ -51,18 +60,18 @@
         var lifex = 20;
         var lifey = 20;
         var ähm = 1;
-        document.getElementById("life1").textContent = lifex;
-        document.getElementById("life2").textContent = lifey;
-        document.getElementById("res20inf_1").textContent = "";
-        document.getElementById("res40inf_1").textContent = "";
-        document.getElementById("res20inf_2").textContent = "";
-        document.getElementById("res40inf_2").textContent = "";
+        document.getElementById("life1 ").textContent = lifex;
+        document.getElementById("life2 ").textContent = lifey;
+        document.getElementById("res20inf_1 ").textContent = " ";
+        document.getElementById("res40inf_1 ").textContent = " ";
+        document.getElementById("res20inf_2 ").textContent = " ";
+        document.getElementById("res40inf_2 ").textContent = " ";
 
         //Reset Life to 20
         function res20_1() {
             if (lifex < 1) {
-                document.getElementById("life1").textContent = "20";
-                document.getElementById("life2").textContent = "20";
+                document.getElementById("life1 ").textContent = "20 ";
+                document.getElementById("life2 ").textContent = "20 ";
                 lifex = v20;
                 lifey = v20;
                 resstyle();
@@ -72,8 +81,8 @@
         //Reset Life to 40
         function res40_1() {
             if (lifex < 1) {
-                document.getElementById("life1").textContent = "40";
-                document.getElementById("life2").textContent = "40";
+                document.getElementById("life1 ").textContent = "40 ";
+                document.getElementById("life2 ").textContent = "40 ";
                 lifex = v40;
                 lifey = v40;
                 resstyle();
@@ -83,8 +92,8 @@
         //Reset Life to 20
         function res20_2() {
             if (lifey < 1) {
-                document.getElementById("life1").textContent = "20";
-                document.getElementById("life2").textContent = "20";
+                document.getElementById("life1 ").textContent = "20 ";
+                document.getElementById("life2 ").textContent = "20 ";
                 lifex = v20;
                 lifey = v20;
                 resstyle();
@@ -94,8 +103,8 @@
         //Reset Life to 40
         function res40_2() {
             if (lifey < 1) {
-                document.getElementById("life1").textContent = "40";
-                document.getElementById("life2").textContent = "40";
+                document.getElementById("life1 ").textContent = "40 ";
+                document.getElementById("life2 ").textContent = "40 ";
                 lifex = v40;
                 lifey = v40;
                 resstyle();
@@ -106,7 +115,7 @@
         function plus1_1() {
             temp = lifex;
             lifex = temp + v1;
-            document.getElementById("life1").textContent = lifex;
+            document.getElementById("life1 ").textContent = lifex;
             //Start Style
             stylefunction();
         }
@@ -115,7 +124,7 @@
         function plus5_1() {
             temp = lifex;
             lifex = temp + v5;
-            document.getElementById("life1").textContent = lifex;
+            document.getElementById("life1 ").textContent = lifex;
             //Start Style
             stylefunction();
         }
@@ -124,7 +133,7 @@
         function plus10_1() {
             temp = lifex;
             lifex = temp + v10;
-            document.getElementById("life1").textContent = lifex;
+            document.getElementById("life1 ").textContent = lifex;
             //Start Style
             stylefunction();
         }
@@ -133,7 +142,7 @@
         function minus1_1() {
             temp = lifex;
             lifex = temp - v1;
-            document.getElementById("life1").textContent = lifex;
+            document.getElementById("life1 ").textContent = lifex;
             //Start Style
             stylefunction();
         }
@@ -142,7 +151,7 @@
         function minus5_1() {
             temp = lifex;
             lifex = temp - v5;
-            document.getElementById("life1").textContent = lifex;
+            document.getElementById("life1 ").textContent = lifex;
             //Start Style
             stylefunction();
         }
@@ -151,7 +160,7 @@
         function minus10_1() {
             temp = lifex;
             lifex = temp - v10;
-            document.getElementById("life1").textContent = lifex;
+            document.getElementById("life1 ").textContent = lifex;
             //Start Style
             stylefunction();
         }
@@ -159,7 +168,7 @@
         function plus1_2() {
             temp = lifey;
             lifey = temp + v1;
-            document.getElementById("life2").textContent = lifey;
+            document.getElementById("life2 ").textContent = lifey;
             //Start Style
             stylefunction();
         }
@@ -167,7 +176,7 @@
         function plus5_2() {
             temp = lifey;
             lifey = temp + v5;
-            document.getElementById("life2").textContent = lifey;
+            document.getElementById("life2 ").textContent = lifey;
             if (lifey > 0) {
                 //Start Style
                 stylefunction();
@@ -177,7 +186,7 @@
         function plus10_2() {
             temp = lifey;
             lifey = temp + v10;
-            document.getElementById("life2").textContent = lifey;
+            document.getElementById("life2 ").textContent = lifey;
 
             //Start Style
             stylefunction();
@@ -187,7 +196,7 @@
         function minus1_2() {
             temp = lifey;
             lifey = temp - v1;
-            document.getElementById("life2").textContent = lifey;
+            document.getElementById("life2 ").textContent = lifey;
 
             //Start Style
             stylefunction();
@@ -197,7 +206,7 @@
         function minus5_2() {
             temp = lifey;
             lifey = temp - v5;
-            document.getElementById("life2").textContent = lifey;
+            document.getElementById("life2 ").textContent = lifey;
 
             //Start Style
             stylefunction();
@@ -207,7 +216,7 @@
         function minus10_2() {
             temp = lifey;
             lifey = temp - v10;
-            document.getElementById("life2").textContent = lifey;
+            document.getElementById("life2 ").textContent = lifey;
             //Start Style
             stylefunction();
         }
@@ -216,70 +225,70 @@
         function stylefunction() {
             if (lifex > 0) {
                 //Button color
-                document.getElementById("11").style.backgroundColor = "#28EDCA"
-                document.getElementById("21").style.backgroundColor = "#28EDCA"
-                document.getElementById("31").style.backgroundColor = "#28EDCA"
+                document.getElementById("11 ").style.backgroundColor = "#28EDCA "
+                document.getElementById("21 ").style.backgroundColor = "#28EDCA "
+                document.getElementById("31 ").style.backgroundColor = "#28EDCA "
                     //Text color
-                document.getElementById("11").style.color = "#28EDCA"
-                document.getElementById("31").style.color = "#28EDCA"
+                document.getElementById("11 ").style.color = "#28EDCA "
+                document.getElementById("31 ").style.color = "#28EDCA "
                     //Table color
-                document.getElementById("id1").style.backgroundColor = "#28EDCA"
-                document.getElementById("id2").style.backgroundColor = "#28EDCA"
-                document.getElementById("id3").style.backgroundColor = "#28EDCA"
-                document.getElementById("id3").style.borderColor = "#28EDCA"
-                document.getElementById("id1").style.borderColor = "#28EDCA"
-                document.getElementById("id2").style.borderColor = "#28EDCA"
+                document.getElementById("id1 ").style.backgroundColor = "#28EDCA "
+                document.getElementById("id2 ").style.backgroundColor = "#28EDCA "
+                document.getElementById("id3 ").style.backgroundColor = "#28EDCA "
+                document.getElementById("id3 ").style.borderColor = "#28EDCA "
+                document.getElementById("id1 ").style.borderColor = "#28EDCA "
+                document.getElementById("id2 ").style.borderColor = "#28EDCA "
             }
 
             if (lifex < 1) {
                 //Button color
-                document.getElementById("11").style.backgroundColor = "#EB0600"
-                document.getElementById("21").style.backgroundColor = "#EB0600"
-                document.getElementById("31").style.backgroundColor = "#EB0600"
+                document.getElementById("11 ").style.backgroundColor = "#EB0600 "
+                document.getElementById("21 ").style.backgroundColor = "#EB0600 "
+                document.getElementById("31 ").style.backgroundColor = "#EB0600 "
                     //Text color
-                document.getElementById("11").style.color = "white"
-                document.getElementById("31").style.color = "white"
+                document.getElementById("11 ").style.color = "white "
+                document.getElementById("31 ").style.color = "white "
                     //Table color
-                document.getElementById("id1").style.backgroundColor = "#EB0600"
-                document.getElementById("id2").style.backgroundColor = "#EB0600"
-                document.getElementById("id3").style.backgroundColor = "#EB0600"
-                document.getElementById("id3").style.borderColor = "#EB0600"
-                document.getElementById("id1").style.borderColor = "#EB0600"
-                document.getElementById("id2").style.borderColor = "#EB0600"
+                document.getElementById("id1 ").style.backgroundColor = "#EB0600 "
+                document.getElementById("id2 ").style.backgroundColor = "#EB0600 "
+                document.getElementById("id3 ").style.backgroundColor = "#EB0600 "
+                document.getElementById("id3 ").style.borderColor = "#EB0600 "
+                document.getElementById("id1 ").style.borderColor = "#EB0600 "
+                document.getElementById("id2 ").style.borderColor = "#EB0600 "
             }
 
             if (lifey > 0) {
                 //Button color
-                document.getElementById("12").style.backgroundColor = "#28EDCA"
-                document.getElementById("22").style.backgroundColor = "#28EDCA"
-                document.getElementById("32").style.backgroundColor = "#28EDCA"
+                document.getElementById("12 ").style.backgroundColor = "#28EDCA "
+                document.getElementById("22 ").style.backgroundColor = "#28EDCA "
+                document.getElementById("32 ").style.backgroundColor = "#28EDCA "
                     //Text color
-                document.getElementById("12").style.color = "#28EDCA"
-                document.getElementById("32").style.color = "#28EDCA"
+                document.getElementById("12 ").style.color = "#28EDCA "
+                document.getElementById("32 ").style.color = "#28EDCA "
                     //Table color
-                document.getElementById("id4").style.backgroundColor = "#28EDCA"
-                document.getElementById("id5").style.backgroundColor = "#28EDCA"
-                document.getElementById("id6").style.backgroundColor = "#28EDCA"
-                document.getElementById("id4").style.borderColor = "#28EDCA"
-                document.getElementById("id5").style.borderColor = "#28EDCA"
-                document.getElementById("id6").style.borderColor = "#28EDCA"
+                document.getElementById("id4 ").style.backgroundColor = "#28EDCA "
+                document.getElementById("id5 ").style.backgroundColor = "#28EDCA "
+                document.getElementById("id6 ").style.backgroundColor = "#28EDCA "
+                document.getElementById("id4 ").style.borderColor = "#28EDCA "
+                document.getElementById("id5 ").style.borderColor = "#28EDCA "
+                document.getElementById("id6 ").style.borderColor = "#28EDCA "
             }
 
             if (lifey < 1) {
                 //Button color
-                document.getElementById("12").style.backgroundColor = "#EB0600"
-                document.getElementById("22").style.backgroundColor = "#EB0600"
-                document.getElementById("32").style.backgroundColor = "#EB0600"
+                document.getElementById("12 ").style.backgroundColor = "#EB0600 "
+                document.getElementById("22 ").style.backgroundColor = "#EB0600 "
+                document.getElementById("32 ").style.backgroundColor = "#EB0600 "
                     //Text color
-                document.getElementById("12").style.color = "white"
-                document.getElementById("32").style.color = "white"
+                document.getElementById("12 ").style.color = "white "
+                document.getElementById("32 ").style.color = "white "
                     //Table color
-                document.getElementById("id4").style.backgroundColor = "#EB0600"
-                document.getElementById("id5").style.backgroundColor = "#EB0600"
-                document.getElementById("id6").style.backgroundColor = "#EB0600"
-                document.getElementById("id4").style.borderColor = "#EB0600"
-                document.getElementById("id5").style.borderColor = "#EB0600"
-                document.getElementById("id6").style.borderColor = "#EB0600"
+                document.getElementById("id4 ").style.backgroundColor = "#EB0600 "
+                document.getElementById("id5 ").style.backgroundColor = "#EB0600 "
+                document.getElementById("id6 ").style.backgroundColor = "#EB0600 "
+                document.getElementById("id4 ").style.borderColor = "#EB0600 "
+                document.getElementById("id5 ").style.borderColor = "#EB0600 "
+                document.getElementById("id6 ").style.borderColor = "#EB0600 "
             }
 
         }
@@ -287,30 +296,30 @@
         //Reset Styler
         function resstyle() {
             //Button color
-            document.getElementById("11").style.backgroundColor = "#28EDCA"
-            document.getElementById("21").style.backgroundColor = "#28EDCA"
-            document.getElementById("31").style.backgroundColor = "#28EDCA"
-            document.getElementById("12").style.backgroundColor = "#28EDCA"
-            document.getElementById("22").style.backgroundColor = "#28EDCA"
-            document.getElementById("32").style.backgroundColor = "#28EDCA"
+            document.getElementById("11 ").style.backgroundColor = "#28EDCA "
+            document.getElementById("21 ").style.backgroundColor = "#28EDCA "
+            document.getElementById("31 ").style.backgroundColor = "#28EDCA "
+            document.getElementById("12 ").style.backgroundColor = "#28EDCA "
+            document.getElementById("22 ").style.backgroundColor = "#28EDCA "
+            document.getElementById("32 ").style.backgroundColor = "#28EDCA "
                 //Text color
-            document.getElementById("11").style.color = "#28EDCA"
-            document.getElementById("31").style.color = "#28EDCA"
-            document.getElementById("12").style.color = "#28EDCA"
-            document.getElementById("32").style.color = "#28EDCA"
+            document.getElementById("11 ").style.color = "#28EDCA "
+            document.getElementById("31 ").style.color = "#28EDCA "
+            document.getElementById("12 ").style.color = "#28EDCA "
+            document.getElementById("32 ").style.color = "#28EDCA "
                 //Table color
-            document.getElementById("id1").style.backgroundColor = "#28EDCA"
-            document.getElementById("id2").style.backgroundColor = "#28EDCA"
-            document.getElementById("id3").style.backgroundColor = "#28EDCA"
-            document.getElementById("id3").style.borderColor = "#28EDCA"
-            document.getElementById("id1").style.borderColor = "#28EDCA"
-            document.getElementById("id2").style.borderColor = "#28EDCA"
-            document.getElementById("id4").style.backgroundColor = "#28EDCA"
-            document.getElementById("id5").style.backgroundColor = "#28EDCA"
-            document.getElementById("id6").style.backgroundColor = "#28EDCA"
-            document.getElementById("id4").style.borderColor = "#28EDCA"
-            document.getElementById("id5").style.borderColor = "#28EDCA"
-            document.getElementById("id6").style.borderColor = "#28EDCA"
+            document.getElementById("id1 ").style.backgroundColor = "#28EDCA "
+            document.getElementById("id2 ").style.backgroundColor = "#28EDCA "
+            document.getElementById("id3 ").style.backgroundColor = "#28EDCA "
+            document.getElementById("id3 ").style.borderColor = "#28EDCA "
+            document.getElementById("id1 ").style.borderColor = "#28EDCA "
+            document.getElementById("id2 ").style.borderColor = "#28EDCA "
+            document.getElementById("id4 ").style.backgroundColor = "#28EDCA "
+            document.getElementById("id5 ").style.backgroundColor = "#28EDCA "
+            document.getElementById("id6 ").style.backgroundColor = "#28EDCA "
+            document.getElementById("id4 ").style.borderColor = "#28EDCA "
+            document.getElementById("id5 ").style.borderColor = "#28EDCA "
+            document.getElementById("id6 ").style.borderColor = "#28EDCA "
         }
     </script>
     <style>
@@ -325,7 +334,8 @@
             font-size: 16px;
             margin: 4px 0px;
             cursor: pointer;
-            font-size: 20px;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
         }
         
         .button_res {
@@ -339,6 +349,7 @@
             margin: 4px 0px;
             cursor: pointer;
             font-size: 40px;
+            font-family: 'Roboto', sans-serif;
         }
         
         .lifedisplay {
@@ -352,25 +363,28 @@
             margin: 4px 0px;
             cursor: pointer;
             font-size: 40px;
+            font-family: 'Roboto', sans-serif;
         }
         
         table {
-            font-family: arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             border-collapse: collapse;
-            width: 452.92px;
+            text-align: center;
         }
         
         .buttonbar {
             border: 1px solid #4CAF50;
-            text-align: left;
-            padding: 8px;
             background-color: #4CAF50;
+            width: 201.333;
+            height: 68px;
+            text-align: center;
         }
         
         .lifebar {
             border: 1px solid #28EDCA;
-            text-align: left;
-            padding: 8px;
+            text-align: center;
+            width: 68px;
+            width: 201.333;
             background-color: #28EDCA;
         }
         
@@ -384,6 +398,20 @@
             font-size: 25px;
             font-family: 'Roboto', sans-serif;
         }
+        
+        .back {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            height: 30px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+        }
     </style>
 
 </body>
+
+</html>

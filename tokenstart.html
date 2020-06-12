@@ -6,25 +6,19 @@
 
 
 
-    <p>
-        <h2>Tokens Editionen</h2>
-        <a href="token_ikoria.html">Ikoria: Lair of Behemoths</a><br>
-        <a href="token_theros.html">Theros: Beyond Death</a><br>
-        <a href="token_throne.html">Throne of Eldraine</a><br>
-        <a href="token_war.html">War of the Spark</a><br>
-        <a href="token_ravnicaallegiance.html">Ravnica Allegiance</a><br>
-        <a href="token_guildsofravnica.html">Guilds of Ravnica</a><br>
-        <br>
-        <br>
-        <h2>Tokens Decks</h2>
-        <a href="token_superfriends.html">Superfriends</a>
-        <br>
-        <br>
-    </p>
+    <div class="button_div">
+        <button style="font-size: 40px; background-color: black; color: #28EDCA;">Sets</button>
+        <button onclick="window.location.href = 'token_ikoria.html';">Ikoria: Lair of Behemoths</button>
+        <button onclick="window.location.href = 'token_theros.html';">Theros: Beyond Death</button>
+        <button onclick="window.location.href = 'token_throne.html';">Throne of Eldraine</button>
+        <button onclick="window.location.href = 'token_war.html';">War of the Spark</button>
+        <button onclick="window.location.href = 'token_ravnicaallegiance.html';">Ravnica Allegiance</button>
+        <button onclick="window.location.href = 'token_guildsofravnica.html';">Guilds of Ravnica</button>
+        <button style="font-size: 40px; background-color: black; color: #28EDCA;">Decks</button>
+        <button onclick="window.location.href = 'token_superfriends.html';">Superfriends</button>
+    </div>
 
-    <p>
-        <a href="start.html">Start</a>
-    </p>
+    <button onclick="window.location.href = 'start.html';" class="back">Zurück</button>
 
 </body>
 <style>
@@ -33,9 +27,35 @@
         font-family: 'Roboto', sans-serif;
     }
     
-    h2 {
-        font-size: 40px;
+    .h2 {
+        font-size: 50px;
         margin: 0px;
         font-family: 'Roboto', sans-serif;
+        background-color: #28EDCA;
+    }
+    
+    .button_div button {
+        background-color: #4CAF50;
+        border: 1px solid #28EDCA;
+        color: white;
+        height: 55px;
+        width: 400px;
+        text-decoration: none;
+        font-size: 33px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        display: block;
+    }
+    
+    .back {
+        background-color: #4CAF50;
+        color: white;
+        height: 30px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        border: none;
     }
 </style>

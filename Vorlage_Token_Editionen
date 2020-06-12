@@ -1,0 +1,112 @@
+<body>
+
+    <h1>----- Tokens</h1>
+
+    <p>
+        <select onchange="changer()" id="chose">
+        <option value="0">-----</option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10"></option>
+        <option value="11"></option>
+        <option value="12"></option>
+        <option value="13"></option>
+        <option value="14"></option>
+        <option value="15"></option>
+        <option value="16"></option>
+        <option value="17"></option>
+        <option value="18"></option>
+        <option value="19"></option>
+        </select>
+        <div id="token"><img src="images/token//logo.png" alt=""></div>
+        <br>
+    </p>
+
+    
+
+    <p>
+        <a href="tokenstart.html">Zurück</a>
+        <a href="start.html">Start</a>
+    </p>
+
+
+    <script>
+        function changer() {
+            x = document.querySelector("#chose").value;
+            if (x == 0) {
+                document.getElementById("token").innerHTML = ``;
+            } else if (x == "1") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "2") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "3") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "4") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "5") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "6") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "7") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "8") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "9") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "10") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "11") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "12") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "13") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "14") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "15") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "16") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "17") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "18") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+            } else if (x == "19") {
+                document.getElementById("token").innerHTML = `<img class="tokens" src="images/token/" alt="Missing img">`;
+
+
+
+
+
+            }
+        }
+    </script>
+    style>
+        .tokens {
+            transform: rotate(270deg);
+            width: 452.92px;
+            height: 626.99px;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        a {
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
+
+
+</body>

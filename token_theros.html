@@ -1,9 +1,13 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
 <body>
 
     <h1>Theros beyond Death</h1>
 
     <p>
-        <select onchange="changer()" id="chose">
+        <select class="choser" onchange="changer()" id="chose">
         <option value="0">-----</option>
         <option value="1">Goat</option>
         <option value="2">Human Soldier</option>
@@ -23,14 +27,7 @@
         <div id="token"><img src="images/token/theros/logo.png" alt=""></div>
         <br>
     </p>
-
-
-    <p>
-        <a href="tokenstart.html">Zurück</a>
-        <a href="start.html">Start</a>
-    </p>
-
-
+    <button onclick="window.location.href = 'tokenstart.html';" class="back">Zurück</button><button onclick="window.location.href = 'start.html';" class="back">Start</button>
     <script>
         function changer() {
             x = document.querySelector("#chose").value;
@@ -83,6 +80,22 @@
         a {
             font-size: 25px;
             font-family: 'Roboto', sans-serif;
+        }
+        
+        .choser {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .back {
+            background-color: #4CAF50;
+            color: white;
+            height: 30px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            border: none;
         }
     </style>
 
