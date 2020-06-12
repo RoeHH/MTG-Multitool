@@ -8,3 +8,4 @@ With the release of a new edition or on demand I will gladly create a new page w
 Soon I will upload a scaling version of the "MTG Multitool" to my website. Which is optimized for telephones. Link will follow as soon as it is done.
 ## I need you!
 If you have an idea for an improvement or a new function, tell me about it or develope it yourself. Especially if you can give me tips and tricks for my coding.
+## Netlify
