@@ -7,7 +7,7 @@
 
 <body>
 
-    <h1>Kopf oder Zahl</h1>
+   
 
     <button id="inf" class="img_button" onclick="rand1()"><div id="div1"><img class="coins" src="images/coin/1fr_kopf.PNG" alt="Kopf"></div></button>
     <br>
@@ -15,7 +15,7 @@
     <button id="2" style="float: left;" class="coin_button" onclick="fr2()">2Fr</button>
     <button id="3" class="coin_button" onclick="fr5()">5Fr</button>
     <br>
-    <button onclick="window.location.href = 'start.html';" class="back">Zurück</button>
+    <button id="4" onclick="window.location.href = 'start.html';" class="back">Zurück</button>
 
 
 
@@ -71,11 +71,13 @@
                 document.getElementById(1).style.backgroundColor = "#28EDCA"
                 document.getElementById(2).style.backgroundColor = "#28EDCA"
                 document.getElementById(3).style.backgroundColor = "#28EDCA"
+                document.getElementById(4).style.backgroundColor = "#28EDCA"
                 inf = 2;
             } else {
                 document.getElementById(1).style.backgroundColor = "#4CAF50"
                 document.getElementById(2).style.backgroundColor = "#4CAF50"
                 document.getElementById(3).style.backgroundColor = "#4CAF50"
+                document.getElementById(4).style.backgroundColor = "#4CAF50"
                 inf = 1;
             }
 
